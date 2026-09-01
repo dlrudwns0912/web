@@ -1,128 +1,33 @@
-<!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="icon" href="../images/favicon.png" />
-    <title>LCR</title>
-    <style media="screen and (max-width: 768px)">
-      #search {
-        width: 200px;
-      }
-      #policy {
-        font-size: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div>
-        <a href="main.html"><img src="../images/favicon.png" alt="favicon" /></a>
-        <h1 id="main-title">LCR</h1>
-        <label for="search"></label>
-        <input id="search" type="text" placeholder="검색" />
-        <div id="user">
-          <p id="login">로그인</p>
-          <p id="signUp">회원가입</p>
-          <p id="delete-user">회원 탈퇴</p>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            개요
-            <ul class="submenu">
-              <li><a href="sub1.html">지역 소멸 관련</a></li>
-              <li>소멸 위험 지역 현황</li>
-            </ul>
-          </li>
-          <li>
-            지원정책
-            <ul class="submenu">
-              <li><a href="sub2.html">정부 지원 정책</a></li>
-              <li>지자체별 정책</li>
-            </ul>
-          </li>
-          <li>
-            로컬 맵
-            <ul class="submenu">
-              <li>소멸 위험 지역 지도</li>
-              <li>지역별 인구 현황</li>
-            </ul>
-          </li>
-          <li>
-            시뮬레이션
-            <ul class="submenu">
-              <li>인구 변화 예측</li>
-              <li>지역 소멸 지수 계산</li>
-            </ul>
-          </li>
-          <li>
-            커뮤니티
-            <ul class="submenu">
-              <li>자유 게시판</li>
-              <li>지역 소멸 관련 Q&A</li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="main-img">
-        <h2>지방이 사라지면 대한민국도 멈춥니다</h2>
-        <p>지역 소멸 위기, 이제는 우리가 함께 고민하고 해결해야 할 때입니다.</p>
-      </section>
+# LCR - 지역 소멸 위기 극복 플랫폼
 
-      <section class="card-section">
-        <div class="card">
-          <div id="card-image1"></div>
-          <div class="card-content">
-            <h3 id="card1-title">2026 지방소멸 시한폭탄</h3>
-            <p id="card1-content">
-              전국 시·군·구 10곳 중 6곳이 인구 재생산 불가능한 '소멸 위험 지역'으로 진입했습니다.
-            </p>
-          </div>
-        </div>
+## 프로젝트 개요
+LCR은 지역 소멸 위기에 대한 인식을 높이고, 정부 정책 정보를 제공하며, 데이터 기반의 분석을 통해 지역 발전을 지원하는 웹 플랫폼입니다.
 
-        <div class="card">
-          <div id="card-image2"></div>
-          <div class="card-content">
-            <h3 id="card2-title">주거 지원만으론 실패</h3>
-            <p id="card2-content">
-              청년들이 지방을 떠나는 진짜 이유는 주택 문제보다 '양질의 일자리와 산업
-              부족'때문입니다.
-            </p>
-          </div>
-        </div>
+## 주요 기능
 
-        <div class="card">
-          <div id="card-image3"></div>
-          <div class="card-content">
-            <h3 id="card3-title">이주 대신 '생활인구'</h3>
-            <p id="card3-content">
-              주민등록상 인구 집착을 버리고 주말 관광객이나 체류 인구를 늘리는 생존 전략이
-              대세입니다.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p class="footer-info">
-        <span id="policy"
-          >개인정보 처리방침 | 저작권보호정책 | 이용약관 | 이메일주소무단소집거부</span
-        ><br />
-        (43010) 대구광역시 달성군 구지면 창리로 11길 93<br />
-        Tel : 이경준 : 010-1234-1234, 이동현 : 010-9876-5432<br />
-        2026 LCR. All rights reserved. <br />
-        Copyright 1112 이경준, 1113 이동현
-      </p>
-    </footer>
-    <script src="../js/main.js"></script>
-  </body>
-</html>
+### 1. 개요 (Overview)
+- 지역 소멸 관련 정보 제공
+- 소멸 위험 지역 현황 분석
+
+### 2. 지원정책 (Support Policy)
+- 정부 지원 정책 정보
+- 지자체별 맞춤형 정책
+
+### 3. 로컬 맵 (Local Map)
+- 소멸 위험 지역 지도 시각화
+- 지역별 인구 현황 데이터
+
+### 4. 시뮬레이션 (Simulation)
+- 인구 변화 예측
+- 지역 소멸 지수 계산
+
+### 5. 커뮤니티 (Community)
+- 자유 게시판
+- 지역 소멸 관련 Q&A
+
+## 기술 스택
+- Frontend: HTML5, CSS3, JavaScript
+- Responsive Design: 모바일 최적화
+
+## 라이선스
+2026 LCR. All rights reserved.
