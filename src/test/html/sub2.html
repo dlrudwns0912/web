@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/sub2.css" />
+    <link rel="icon" href="../images/favicon.png" />
+    <title>LCR</title>
+    <style media="screen and (max-width: 768px)">
+        #search {
+            width: 200px;
+        }
+        #policy {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div>
+        <a href="main.html"><img src="../images/favicon.png" alt="favicon" /></a>
+        <h1 id="main-title">LCR</h1>
+        <label for="search"></label>
+        <input id="search" type="text" placeholder="검색" />
+        <div id="user">
+            <p id="login">로그인</p>
+            <p id="signUp">회원가입</p>
+            <p id="delete-user">회원 탈퇴</p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                개요
+                <ul class="submenu">
+                    <li><a href="sub1.html">지역 소멸 관련</a></li>
+                    <li>소멸 위험 지역 현황</li>
+                </ul>
+            </li>
+            <li>
+                지원정책
+                <ul class="submenu">
+                    <li><a href="sub2.html">정부 지원 정책</a></li>
+                    <li>지자체별 정책</li>
+                </ul>
+            </li>
+            <li>
+                로컬 맵
+                <ul class="submenu">
+                    <li>소멸 위험 지역 지도</li>
+                    <li>지역별 인구 현황</li>
+                </ul>
+            </li>
+            <li>
+                시뮬레이션
+                <ul class="submenu">
+                    <li>인구 변화 예측</li>
+                    <li>지역 소멸 지수 계산</li>
+                </ul>
+            </li>
+            <li>
+                커뮤니티
+                <ul class="submenu">
+                    <li>자유 게시판</li>
+                    <li>지역 소멸 관련 Q&A</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="sub2-mainImg">
+        <h2>다시 뛰는 로컬, 내일을 여는 지원 정책</h2>
+        <p>
+            모두가 고르게 잘 사는 대한민국을 위해, 지역의 자생력을 키우는 맞춤형 복지와 인프라 지원
+            정책을 소개합니다.
+        </p>
+    </section>
+
+    <section class="card-section">
+        <div class="card">
+            <div class="card-content">
+                <table>
+                    <caption class="t_cap">지역소멸 대응 정부 지원 정책</caption>
+                    <colgroup>
+                        <col style="background-color: #f0f8ff;">
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>정책 분야</th>
+                        <th>정책명</th>
+                        <th>주요 내용</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="t_bold" rowspan="2">인구 유입</td>
+                        <td>청년 정착 지원금</td>
+                        <td>지역 이주 청년에게 월 100만원 지원 (최대 3년)</td>
+                    </tr>
+                    <tr>
+                        <td>귀촌 인센티브</td>
+                        <td>귀촌가구 정착금 5,000만원 + 주택 구입비 지원</td>
+                    </tr>
+                    <tr>
+                        <td class="t_bold" rowspan="2">일자리 창출</td>
+                        <td>지역 일자리 사업</td>
+                        <td>지역 맞춤형 일자리 창출 및 교육 훈련 지원</td>
+                    </tr>
+                    <tr>
+                        <td>소상공인 지원</td>
+                        <td>저금리 대출 및 경영 컨설팅 제공</td>
+                    </tr>
+                    <tr>
+                        <td class="t_bold" rowspan="2">지역 경제</td>
+                        <td>지방소멸대응기금</td>
+                        <td>5년간 10조원 규모의 지자체 맞춤형 사업 지원</td>
+                    </tr>
+                    <tr>
+                        <td>신활력사업</td>
+                        <td>지역 특성에 맞는 신산업 육성 및 인프라 조성</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="form-section">
+                    <h3>정책 제안하기</h3>
+                    <form id="policyForm">
+                        <div class="form-group">
+                            <label for="policyField">정책 분야 *</label>
+                            <select id="policyField" name="policyField" required>
+                                <option value="">선택해주세요</option>
+                                <option value="인구유입">인구 유입</option>
+                                <option value="일자리창출">일자리 창출</option>
+                                <option value="지역경제">지역 경제</option>
+                                <option value="교육문화">교육 · 문화</option>
+                                <option value="인프라">인프라</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="policyName">정책명 *</label>
+                            <input type="text" id="policyName" name="policyName" placeholder="예: 청년 정착 지원금" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="policyDesc">정책 설명 *</label>
+                            <textarea id="policyDesc" name="policyDesc" placeholder="정책의 내용과 목표를 설명해주세요" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="expectedEffect">예상 효과 *</label>
+                            <input type="text" id="expectedEffect" name="expectedEffect" placeholder="예: 청년 인구 유입 증대" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="proposerName">제안자 이름 *</label>
+                                <input type="text" id="proposerName" name="proposerName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="proposerEmail">이메일 *</label>
+                                <input type="email" id="proposerEmail" name="proposerEmail" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">제안 제출하기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p class="footer-info">
+        <span id="policy"
+        >개인정보 처리방침 | 저작권보호정책 | 이용약관 | 이메일주소무단소집거부</span
+        ><br />
+        (43010) 대구광역시 달성군 구지면 창리로 11길 93<br />
+        Tel : 이경준 : 010-1234-1234, 이동현 : 010-9876-5432<br />
+        2026 LCR. All rights reserved. <br />
+        Copyright 1112 이경준, 1113 이동현
+    </p>
+</footer>
+</body>
+</html>

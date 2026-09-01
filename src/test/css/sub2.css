@@ -1,0 +1,169 @@
+#sub2-mainImg {
+    width: 100%;
+    height: 540px;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/sub2_main_img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#sub2-mainImg h2 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
+    bottom: auto;
+}
+
+#sub2-mainImg p {
+    font-size: 22px;
+    line-height: 1.6;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* 표 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.t_cap {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+    color: #1e1e1e;
+    caption-side: top;
+}
+
+table thead {
+    background-color: #4a90e2;
+    color: white;
+}
+
+table thead th {
+    padding: 15px 12px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 2px solid #357abd;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #e3e3e3;
+    transition: background-color 0.2s ease;
+}
+
+table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+table tbody td {
+    padding: 12px;
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5;
+}
+
+table tbody td.t_bold {
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+table tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* 폼 스타일 */
+.form-section {
+    width: 100%;
+}
+
+.form-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #c8c8c8;
+    border-radius: 8px;
+    font-family: "Escoredream", sans-serif;
+    font-size: 13px;
+    color: #333;
+    background-color: #fafafa;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background-color: white;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: "Escoredream", sans-serif;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Escoredream", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #357abd;
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
